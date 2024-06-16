@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:2.1.1-cuda12.1-cudnn8-runtime
+FROM pytorch/pytorch:2.1.1-cuda12.0-cudnn8-runtime
 #FROM nvcr.io/nvidia/pytorch:22.08-py3
 ENV TZ=Europe/Moscow
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
